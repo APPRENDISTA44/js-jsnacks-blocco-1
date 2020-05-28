@@ -38,34 +38,36 @@
  // document.getElementById('risposta').innerHTML = somma;
 
 //versione col while
-var somma = 0;
-var i = 0;
-while (i != 5 ) {
-  var numero = parseInt(prompt('Inserisci un numero:'))
-  if (!(isNaN(numero))) {
-    somma += numero;
-    i++;
-  }
-}
-  document.getElementById('risposta').innerHTML = somma;
-
+// var somma = 0;
+// var i = 0;
+// while (i != 5 ) {
+//   var numero = parseInt(prompt('Inserisci un numero:'))
+//   if (!(isNaN(numero))) {
+//     somma += numero;
+//     i++;
+//   }
+// }
+//   document.getElementById('risposta').innerHTML = somma;
+//
 
 
 
 //JSNACK 4
-// var lista = ['Ernesto','Pippo','Rossi','Esposito'];
-// var nome = prompt('Inserisci il tuo nome:');
-// var presente = false;
-// for (var i = 0; i < lista.length; i++) {
-//   if (nome == lista[i]) {
-//     presente = true;
-//   }
-// }
-// if (presente) {
-//   document.getElementById('risposta').innerHTML = 'Puoi partecipare';
-// } else {
-//   document.getElementById('risposta').innerHTML = 'Non puoi partecipare';
-// }
+var lista = ['Ernesto','Pippo','Rossi','Esposito'];
+var nome = prompt('Inserisci il tuo nome:');
+var presente = false;
+var i = 0;
+while (presente == false && i < lista.length) {
+  if (nome == lista[i]) {
+    presente = true;
+  }
+  i++;
+}
+if (presente) {
+  document.getElementById('risposta').innerHTML = 'Puoi partecipare';
+} else {
+  document.getElementById('risposta').innerHTML = 'Non puoi partecipare';
+}
 
 
 //JSNACK 5
