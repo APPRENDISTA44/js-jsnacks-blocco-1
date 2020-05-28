@@ -1,19 +1,19 @@
-//JSNACK 1
-var numeroUno = parseInt(prompt('Inserisci un numero:'));
-var numeroDue = parseInt(prompt('Inserisci un numero:'));
-while (isNaN(numeroUno) || isNaN(numeroDue)) {
-  var numeroUno = parseInt(prompt('Inserisci un numero:'));
-  var numeroDue = parseInt(prompt('Inserisci un numero:'));
-}
-var risposta = 'Numeri uguali';
-if (numeroUno > numeroDue) {
-  risposta = numeroUno;
-} else if (numeroDue > numeroUno) {
-    risposta = numeroDue;
-}
-document.getElementById('risposta').innerHTML = risposta;
+// //JSNACK 1
+// var numeroUno = parseInt(prompt('Inserisci un numero:'));
+// var numeroDue = parseInt(prompt('Inserisci un numero:'));
+// while (isNaN(numeroUno) || isNaN(numeroDue)) {
+//   var numeroUno = parseInt(prompt('Inserisci un numero:'));
+//   var numeroDue = parseInt(prompt('Inserisci un numero:'));
+// }
+// var risposta = 'Numeri uguali';
+// if (numeroUno > numeroDue) {
+//   risposta = numeroUno;
+// } else if (numeroDue > numeroUno) {
+//     risposta = numeroDue;
+// }
+// document.getElementById('risposta').innerHTML = risposta;
 
-//JSNACK 2
+// //JSNACK 2
 // //chiedo all'utente due parole
 // var parolaUno = prompt('Inserisci la prima parola:');
 // var parolaDue = prompt('Inserisci la seconda parola:');
@@ -28,34 +28,27 @@ document.getElementById('risposta').innerHTML = risposta;
 // }
 
 
-//JSNACK 3
-// //versione  col for
-//  var lista = [];
-//  var somma = 0;
-//  for (var i = 0; i < 5; i++) {
-//    var numero = parseInt(prompt('Inserisci un numero:'))
-//    lista.push(numero);
-//    somma += numero;
-//  }
-//  document.getElementById('risposta').innerHTML = somma;
+// JSNACK 3
+//versione  col for
+ // var somma = 0;
+ // for (var i = 0; i < 5; i++) {
+ //   var numero = parseInt(prompt('Inserisci un numero:'))
+ //   somma += numero;
+ // }
+ // document.getElementById('risposta').innerHTML = somma;
 
-// //versione col while
-// var lista = [];
-// var somma = 0;
-// var i = 0;
-// while (i != 5 ) {
-//   var numero = parseInt(prompt('Inserisci un numero:'))
-//   lista.push(numero);
-//   somma += numero;
-//   i++;
-// }
-// if (isNaN(somma)) {
-//   document.getElementById('risposta').innerHTML = 'FOVA';
-//
-// }else {
-//   document.getElementById('risposta').innerHTML = somma;
-//
-// }
+//versione col while
+var somma = 0;
+var i = 0;
+while (i != 5 ) {
+  var numero = parseInt(prompt('Inserisci un numero:'))
+  if (!(isNaN(numero))) {
+    somma += numero;
+    i++;
+  }
+}
+  document.getElementById('risposta').innerHTML = somma;
+
 
 
 
