@@ -53,31 +53,31 @@
 
 
 //JSNACK 4
-var lista = ['Ernesto','Pippo','Rossi','Esposito'];
-var nome = prompt('Inserisci il tuo nome:');
-var presente = false;
-var i = 0;
-while (presente == false && i < lista.length) {
-  if (nome == lista[i]) {
-    presente = true;
-  }
-  i++;
-}
-if (presente) {
-  document.getElementById('risposta').innerHTML = 'Puoi partecipare';
-} else {
-  document.getElementById('risposta').innerHTML = 'Non puoi partecipare';
-}
+// var lista = ['Ernesto','Pippo','Rossi','Esposito'];
+// var nome = prompt('Inserisci il tuo nome:');
+// var presente = false;
+// var i = 0;
+// while (presente == false && i < lista.length) {
+//   if (nome == lista[i]) {
+//     presente = true;
+//   }
+//   i++;
+// }
+// if (presente) {
+//   document.getElementById('risposta').innerHTML = 'Puoi partecipare';
+// } else {
+//   document.getElementById('risposta').innerHTML = 'Non puoi partecipare';
+// }
 
 
 //JSNACK 5
-// var numero = prompt('Inserisci un numero');
-// var somma = 0;
-// while (numero.length != 4 || isNaN(numero)) {
-//   numero = prompt('Inserisci un numero');
-// }
-// numero = numero.split('');
-// for (var i = 0; i < numero.length; i++) {
-//   somma += parseInt(numero[i]);
-// }
-// document.getElementById('risposta').innerHTML = somma;
+var numero = prompt('Inserisci un numero di 4 cifre');
+var somma = 0;
+while (numero.length != 4 || isNaN(numero)) {
+  numero = prompt('Inserisci un numero di 4 cifre');
+}
+numero = numero.split('');
+for (var i = 0; i < numero.length; i++) {
+  somma += parseInt(numero[i]);
+}
+document.getElementById('risposta').innerHTML = somma;
