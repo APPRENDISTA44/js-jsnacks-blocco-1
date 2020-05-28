@@ -1,7 +1,7 @@
 //JSNACK 1
 var numeroUno = parseInt(prompt('Inserisci un numero:'));
 var numeroDue = parseInt(prompt('Inserisci un numero:'));
-while (isNaN(numeroUno) && isNaN(numeroDue)) {
+while (isNaN(numeroUno) || isNaN(numeroDue)) {
   var numeroUno = parseInt(prompt('Inserisci un numero:'));
   var numeroDue = parseInt(prompt('Inserisci un numero:'));
 }
