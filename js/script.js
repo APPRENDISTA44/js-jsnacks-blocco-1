@@ -72,11 +72,12 @@
 
 //JSNACK 5
 var numero = prompt('Inserisci un numero di 4 cifre');
+numero = numero.trim();
 var somma = 0;
 while (numero.length != 4 || isNaN(numero)) {
   numero = prompt('Inserisci un numero di 4 cifre');
+  numero = numero.trim();
 }
-numero = numero.split('');
 for (var i = 0; i < numero.length; i++) {
   somma += parseInt(numero[i]);
 }
