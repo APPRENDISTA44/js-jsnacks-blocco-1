@@ -1,3 +1,5 @@
+// JSNACK BLOCCO 1
+
 // //JSNACK 1
 // var numeroUno = parseInt(prompt('Inserisci un numero:'));
 // var numeroDue = parseInt(prompt('Inserisci un numero:'));
@@ -71,14 +73,100 @@
 
 
 //JSNACK 5
-var numero = prompt('Inserisci un numero di 4 cifre');
-numero = numero.trim();
-var somma = 0;
-while (numero.length != 4 || isNaN(numero)) {
-  numero = prompt('Inserisci un numero di 4 cifre');
-  numero = numero.trim();
+// var numero = prompt('Inserisci un numero di 4 cifre');
+// console.log(isNaN(numero));
+// numero = numero.trim();
+// var somma = 0;
+// while (numero.length != 4 || isNaN(numero)) {
+//   numero = prompt('Inserisci un numero di 4 cifre');
+//   console.log(isNaN(numero));
+//
+//   numero = numero.trim();
+// }
+// for (var i = 0; i < numero.length; i++) {
+//   somma += parseInt(numero[i]);
+// }
+// document.getElementById('risposta').innerHTML = somma;
+
+
+
+
+
+
+
+
+//JSNACK BLOCCO 2
+
+// //JSNACK 1
+// var numero = prompt('Inserisci un numero:');
+// for (var i = 0; i < numero; i++) {
+//   var arrayGenerato = genera();
+//   console.log(arrayGenerato);
+// }
+//
+//
+// function genera(){
+//  var array = [];
+//  for (var i = 0; i < 10; i++) {
+//    array.push(Math.floor(Math.random() * 100 ) +1);
+//  }
+//  return array;
+// }
+
+
+
+// //JSNACK 2
+// var nomi = ['Luca', 'Alessandro', 'Marco', 'Davide', 'Mario'];
+// var cognomi = ['Rossi', 'Verdi', 'Caputo','Tonali','Ronaldo'];
+// console.log(nomi.length,cognomi.length);
+// var nomiCognomi = [];
+// for (var i = 0; i < nomi.length; i++) {
+//   var x = casuale(0, nomi.length);
+//   var y = casuale(0, cognomi.length);
+//   console.log(x,y);
+//   nomiCognomi[i] = nomi[x] + ' ' + cognomi[y];
+// }
+// console.log(nomiCognomi);
+//
+// function casuale (min,max){
+//   return Math.floor(Math.random()*(max-min)) + min;
+// }
+
+
+//JSNACK 3
+var arrayUno = [1,2,3];
+var arrayDue = [1,2,3,4,5,6];
+
+var arrayUnoLunghezza = arrayUno.length;
+var arrayDueLunghezza = arrayDue.length;
+if (arrayUnoLunghezza < arrayDueLunghezza) {
+  insert(arrayUno,arrayDueLunghezza)
+} else {
+  insert(arrayDue,arrayUnoLunghezza)
+
 }
-for (var i = 0; i < numero.length; i++) {
-  somma += parseInt(numero[i]);
+console.log(arrayUno);
+console.log(arrayDue);
+
+function casuale (min,max){
+  return Math.floor(Math.random()*(max - min + 1)) + min;
 }
-document.getElementById('risposta').innerHTML = somma;
+function insert(array,lunghezza){
+  while (array.length<lunghezza){
+    array.push(casuale(0,100))
+  }
+}
+
+// //JSNACK 4
+// var array = [1,2,3,4,5,6,7,8,9,10];
+// var elementoVerde = document.getElementById('verde');
+// elementoVerde.style.color = 'green';
+// var elementoRosso = document.getElementById('rosso');
+// elementoRosso.style.color = 'red';
+// for (var i = 0; i < array.length; i++) {
+//   if (array[i] % 2 ==0) {
+//     elementoRosso.innerHTML += array[i] + ' ';
+//   }else {
+//     elementoVerde.innerHTML += array[i] + ' ';
+//   }
+// }
